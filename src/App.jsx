@@ -1,11 +1,22 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import MainLayout from "@/components/layout/Layout"
+import Home from "@/pages/Home"
+import About from "@/pages/About"
+import Services from "@/pages/Services"
+import Contact from "@/pages/Contact"
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <Button>Click me</Button>
-    </div>
+    <BrowserRouter>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </MainLayout>
+    </BrowserRouter>
   )
 }
 
