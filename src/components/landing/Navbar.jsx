@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <img src="https://media.base44.com/images/public/69bb52a56a6e106ff967ea92/09f8262b2_Initial-Red.png" alt="Logo" className="w-10 h-10 object-contain" />
-          <span className="font-inter font-bold text-lg text-foreground tracking-tight">NDMA</span>
+          <span className="font-inter font-bold text-lg text-foreground tracking-tight"></span>
         </Link>
 
         {/* Desktop nav */}

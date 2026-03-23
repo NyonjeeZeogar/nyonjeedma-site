@@ -28,7 +28,7 @@ const pillars = [
 const values = [
   { word: "Seen.", detail: "We listen before we speak. Your story shapes everything we do." },
   { word: "Supported.", detail: "You're never alone in the process. We walk with you, every step." },
-  { word: "Elevated.", detail: "We don't just deliver services — we deliver transformation." },
+  { word: "Empowered.", detail: "We don't just deliver services — we deliver transformation." },
 ];
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-10 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="font-inter text-sm font-medium text-white/80">
-                <em>Nyonjee</em> — to be human · Minnesota
+                <em>Nyonjee's</em> Digital Marketing Agency
               </span>
             </div>
 
@@ -55,7 +55,7 @@ export default function Home() {
             </h1>
 
             <p className="font-inter text-lg md:text-xl text-white/75 max-w-2xl mx-auto mb-12 leading-relaxed">
-              NJ Elevate LLC was built on a simple belief — that every person behind a business deserves to feel seen, supported, and empowered to grow.
+              Nyonjee's Digital Marketing Agency was built on a simple belief — that every person behind a business deserves to feel seen, supported, and empowered to grow.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -68,14 +68,14 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }} className="mt-20 grid grid-cols-3 gap-8 max-w-sm mx-auto">
+          {/* <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }} className="mt-20 grid grid-cols-3 gap-8 max-w-sm mx-auto">
             {[{ label: "Real People", value: "Always" }, { label: "Based in", value: "MN" }, { label: "Mission", value: "Human" }].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="font-inter font-bold text-2xl text-white">{stat.value}</p>
                 <p className="font-inter text-xs text-white/60 mt-1">{stat.label}</p>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

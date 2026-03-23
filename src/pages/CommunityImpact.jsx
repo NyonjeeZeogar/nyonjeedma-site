@@ -13,9 +13,9 @@ const programs = [
 ];
 
 const values = [
-  { title: "Equity First", desc: "Every program is designed with equity and accessibility at the center." },
-  { title: "Community-Led", desc: "We listen to communities and build what they actually need." },
-  { title: "Lasting Impact", desc: "We focus on sustainable change, not one-off events." },
+  { step: "01", title: "Equity First", desc: "Every program is designed with equity and accessibility at the center." },
+  { step: "02", title: "Community-Led", desc: "We listen to communities and build what they actually need." },
+  { step: "03", title: "Lasting Impact", desc: "We focus on sustainable change, not one-off events." },
 ];
 
 export default function CommunityImpact() {
@@ -55,14 +55,33 @@ export default function CommunityImpact() {
       <section className="py-20 px-6 bg-card">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="font-inter font-bold text-3xl md:text-4xl text-foreground">Our Values</h2>
+            <h2 className="font-inter font-bold text-3xl md:text-4xl text-foreground">
+              Our Values
+            </h2>
+            <p className="font-inter text-muted-foreground mt-3">
+              The principles that guide how we serve communities.
+            </p>
           </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             {values.map((v, i) => (
-              <motion.div key={v.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="text-center p-8">
-                <div className="w-2 h-2 rounded-full bg-secondary mx-auto mb-4" />
-                <h4 className="font-inter font-bold text-lg text-foreground mb-3">{v.title}</h4>
-                <p className="font-inter text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
+              <motion.div
+                key={v.step}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="text-center"
+              >
+                <div className="w-12 h-12 rounded-full bg-primary/10 text-primary font-inter font-bold text-lg flex items-center justify-center mx-auto mb-4">
+                  {v.step}
+                </div>
+                <h4 className="font-inter font-semibold text-foreground mb-2">
+                  {v.title}
+                </h4>
+                <p className="font-inter text-sm text-muted-foreground leading-relaxed">
+                  {v.desc}
+                </p>
               </motion.div>
             ))}
           </div>
