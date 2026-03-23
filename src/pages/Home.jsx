@@ -36,26 +36,25 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" />
-        <div className="absolute top-20 right-20 w-96 h-96 bg-primary/6 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-80 h-80 bg-primary/4 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69bb52a56a6e106ff967ea92/abcc1f107_NDMAHERO.png')" }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
-            <div className="inline-flex items-center gap-2 bg-card border border-border rounded-full px-5 py-2.5 mb-10 shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-10 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="font-inter text-sm font-medium text-muted-foreground">
+              <span className="font-inter text-sm font-medium text-white/80">
                 <em>Nyonjee</em> — to be human · Minnesota
               </span>
             </div>
 
-            <h1 className="font-inter font-bold text-5xl md:text-7xl lg:text-8xl text-foreground leading-[0.92] tracking-tight mb-8">
+            <h1 className="font-inter font-bold text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] tracking-tight mb-8">
               Business is personal.
               <br />
               <span className="text-primary">We treat it that way.</span>
             </h1>
 
-            <p className="font-inter text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
+            <p className="font-inter text-lg md:text-xl text-white/75 max-w-2xl mx-auto mb-12 leading-relaxed">
               NJ Elevate LLC was built on a simple belief — that every person behind a business deserves to feel seen, supported, and empowered to grow.
             </p>
 
@@ -72,8 +71,8 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }} className="mt-20 grid grid-cols-3 gap-8 max-w-sm mx-auto">
             {[{ label: "Real People", value: "Always" }, { label: "Based in", value: "MN" }, { label: "Mission", value: "Human" }].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="font-inter font-bold text-2xl text-foreground">{stat.value}</p>
-                <p className="font-inter text-xs text-muted-foreground mt-1">{stat.label}</p>
+                <p className="font-inter font-bold text-2xl text-white">{stat.value}</p>
+                <p className="font-inter text-xs text-white/60 mt-1">{stat.label}</p>
               </div>
             ))}
           </motion.div>
