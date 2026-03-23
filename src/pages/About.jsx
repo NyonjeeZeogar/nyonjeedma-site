@@ -30,7 +30,7 @@ export default function About() {
         badge="Our Story"
         title="Built by a human."
         highlight="Built for humans."
-        description="NJ Elevate LLC was created from lived experience — the struggle, the grind, and the belief that everyone deserves a real shot."
+        description="Nyonjee's Digital Marketing Agency was created from lived experience — the struggle, the grind, and the belief that everyone deserves a real shot."
       />
 
       {/* Founder Story */}
@@ -46,10 +46,10 @@ export default function About() {
                 The name of our founder, Nyonjee, isn't just a name — it's a philosophy. To be human means to show up fully, to care deeply, and to recognize the dignity in every person you work with.
               </p>
               <p className="font-inter text-muted-foreground leading-relaxed mb-5">
-                NJ Elevate was born from that philosophy. We started this company because we saw too many businesses, nonprofits, and entrepreneurs being underserved — getting cookie-cutter solutions when what they really needed was someone who actually cared.
+                Nyonjee's Digital Marketing Agency was born from that philosophy. We started this company because we saw too many businesses, nonprofits, and entrepreneurs being underserved — getting cookie-cutter solutions when what they really needed was someone who actually cared.
               </p>
               <p className="font-inter text-muted-foreground leading-relaxed">
-                So we built something different. A Minnesota-based LLC that brings together digital marketing, business consulting, and community impact — all with one thread running through everything: <strong className="text-foreground">genuine human connection.</strong>
+                So we built something different. A Minnesota-based Agency that brings together digital marketing, business consulting, and community impact — all with one thread running through everything: <strong className="text-foreground">genuine human connection.</strong>
               </p>
             </motion.div>
 
@@ -64,7 +64,7 @@ export default function About() {
                   </div>
                   <div>
                     <p className="font-inter font-semibold text-secondary-foreground">Nyonjee</p>
-                    <p className="font-inter text-sm text-secondary-foreground/60">Founder, NJ Elevate LLC</p>
+                    <p className="font-inter text-sm text-secondary-foreground/60">Founder, Nyonjee's Digital Marketing Agency</p>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function About() {
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
                 <div>
                   <p className="font-inter text-xs text-muted-foreground">Proudly rooted in</p>
-                  <p className="font-inter font-semibold text-foreground">Minnesota, USA</p>
+                  <p className="font-inter font-semibold text-foreground">Minneapolis, Minnesota, USA</p>
                 </div>
               </div>
             </motion.div>
