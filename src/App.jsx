@@ -55,7 +55,7 @@ function App() {
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router basename="/nyonjeedma-site">
+        <Router>
           <AuthenticatedApp />
         </Router>
         <Toaster />
