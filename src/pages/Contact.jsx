@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, MapPin, Clock } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -93,6 +93,16 @@ export default function Contact() {
                     icon: MapPin,
                     label: "We're in Minnesota",
                     value: "Rooted in the community we serve.",
+                  },
+                  { icon: Phone, 
+                    label: "Call us", 
+                    value: "(612) 293-0771", 
+                    href: "tel:6122930771" 
+                  },
+                  { icon: Mail, 
+                    label: "Email us", 
+                    value: "nyonjeezeogar@gmail.com", 
+                    href: "mailto:nyonjeezeogar@gmail.com" 
                   },
                   {
                     icon: Mail,
